@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script>
+     $('#nav a').click(function(){
+         $('#nav a').css("textDecoration", "none"); 
+         $(this).css('textDecoration', 'underline');
+         return false;
+         });
+</script>
+
+<div style="padding-top: 16px; padding-left: 25px;">
+    <div id="nav_bar">
+
+        <!-- V logo -->
+        <div style="display: inline-block;">
+            <h1><a href="index.html">V</a></h1>
+        </div>
+
+        <!-- Sections -->
+        <div style="float: right; padding-right: 12%; padding-top: 30px;">
+
+            <div style="display: inline-block;">
+                <h4><a class="active-page" href="stuff-ive-created.html">Stuff I've Created</a></h4>
+            </div>
+
+            <div style="display: inline-block; padding-left: 50px;">
+                <h4><a href="resume.html">Resume</a></h4>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+            <div id="stuff_ive_created_list"style="height: fit-content; width: 480px; padding-top: 25px; float: left; padding-left: 5%;">
+                    <p>
+                        <p><b>_PERL_</b></p>
+                        <p style="color: #9B9B9B;">[2019]</p>
+                        <p>Perl is a virtual assistant I'm building to help me with things I'm too lazy to do.
+                        Venmo requesting people, running my Spotify, asking dumb questions on Google, etc.
+                        Feast on my code <a href="https://github.com/vaibhavbafna5/friday"><u>here</u></a>.</p>
+                        <br>
+                        <br>
+                        <p><b>_TLDR_</b></p>
+                        <p style="color: #9B9B9B;">[2019]</p>
+                        <p>A simple <a href="https://github.com/vaibhavbafna5/tl-dr"><u>app</u></a> with a retro feel that crawls Reddit for recommendations based on a user's query. 
+                        Good coding practices were not followed.</p>
+                        <br>
+                        <br>
+                        <p><b>_SHIFT_COFFEE_TABLE_</b></p>
+                        <p style="color: #9B9B9B;">[2019]</p>
+                        <p>I created a coffee table consisting of 3D printed legs, a laser engraved tabletop, and wireless charging.
+                        No fingers were injured in the making of this table.</p>
+                        <br>
+                        <br>
+                        <p><b>_TRUE_NAV_</b></p>
+                        <p style="color: #9B9B9B;">[2019]</p>
+                        <p>I built an Android app that shows the true cost of a trip based on monetary cost, environmental impact,
+                            and time. Devour my spaghetti-looking code <a href="https://github.com/vaibhavbafna5/TrueNav"><u>here</u></a>.
+                        </p>
+                    </p>
+            </div>
+            <div style="float: right; padding-right: 1%; padding-top: 50px;">
+                <div style="float: right; padding-top: 54px;">
+                    <img style="height: 340px; padding-right: 12px;" src="imgs/friday demo.png">
+                    <img style="height: 360px;" src="imgs/up.PNG">
+                </div>
+                <div style="padding-left: 200px;">
+                    <div style="float: left; padding-top: 12px; ">
+                        <img style="padding-top: -15px; height: 360px; padding-right: 12px;" src="imgs/table.jpg">
+                        <img style="padding-top: 6px; padding-right: 12px; height: 240px;" src="imgs/table_design.PNG">
+                        <img style="height: 360px; padding-top: 12px" src="imgs/icebergs.jpg">
+                    </div>
+                </div>
+                <div style="float: right; padding-top: 12px;">
+                        <img style="height: 360px; padding-right: 24px;" src="imgs/saharacamp.jpg">
+                        <img style="padding-top: 72px; height: 380px; padding-right: 12px;" src="imgs/spring.PNG">
+                </div>
+                <div style="float: right; padding-top: 100px;">
+                    <img class="rotate90" style="float: right; padding-top: 24px; height: 320px;" src="imgs/ocean.JPG">
+                </div>
+            </div>
+    </div>
+</div>
+ 
+
+</body>
+</html>

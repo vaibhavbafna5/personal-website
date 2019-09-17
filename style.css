@@ -23,6 +23,18 @@ h4:hover {
     text-decoration: underline;
 }
 
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
 #nav_bar div h4 a.active-page {
     color: #4A4A4A;
     text-decoration: underline;
@@ -57,4 +69,8 @@ u:hover {
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+b {
+    font-weight: bolder;
 }

@@ -40,6 +40,30 @@ h4:hover {
     text-decoration: underline;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    padding-left: 15%;
+    padding-right: 10%;
+}
+
+.right-column {
+    flex: 25%;
+    padding-left: 5%;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
 i {
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;

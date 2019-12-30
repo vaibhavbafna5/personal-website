@@ -103,7 +103,7 @@
                 </div>
             </div> -->
     </div>
-    <div class="row" style="padding-top: 25px;">
+    <!-- <div class="row" style="padding-top: 25px;">
         <div class="column">
             <p>perl talking back to me</p>
             <img style="width: 100%; padding-bottom: 5%;" src="imgs/friday demo.png">
@@ -129,7 +129,127 @@
             <p>up</p>
             <img style="width: 100%; padding-bottom: 5%;" src="imgs/up.PNG">
         </div>
-    </div>
+    </div> -->
+        <!-- Slideshow container -->
+        <div style="float: right; padding-top: 50px; padding-right: 50px;">
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+
+                <!-- Perl -->
+                <div class="mySlides fade">
+                    <p class="text">perl talking back to me</p>
+                    <img src="imgs/friday demo.png" style="display: block; margin: auto; width:775px; height:450px;">
+                </div>
+            
+                <!-- spring -->
+                <div class="mySlides fade">
+                    <p class="text">spring</p>
+                    <img src="imgs/spring.PNG" style="display: block; margin: auto; width:350px; height:450px;">
+                </div>
+
+                <!-- coffee table -->
+                <div class="mySlides fade">
+                    <p class="text">initial sketches for a coffee table</p>
+                    <img src="imgs/table_design.PNG" style="display: block; margin: auto; width:700px; height:450px;">
+                </div>
+
+                <!-- laser engraving my table -->
+                <div class="mySlides fade">
+                    <p class="text">laser engraving my table</p>
+                    <img src="imgs/ almost_there.JPG" style="display: block; margin: auto; width:700px; height:450px;">
+                </div>
+
+                <!-- the final product -->
+                <div class="mySlides fade">
+                    <p class="text">the final product</p>
+                    <img src="imgs/table.jpg" style="display: block; margin: auto; width:425px; height:450px;">
+                </div>
+
+                <!-- sunset in the sahara -->
+                <div class="mySlides fade">
+                    <p class="text">sunset in the sahara</p>
+                    <img src="imgs/saharacamp.jpg" style="display: block; margin: auto; width:775px; height:450px;">
+                </div>
+
+                <!-- tldr -->
+                <div class="mySlides fade">
+                    <p class="text">where to eat in SF, according to reddit</p>
+                    <img src="imgs/tldr_demo.png" style="display: block; margin: auto; width:775px; height:450px;">
+                </div>
+
+                <!-- geometry -->
+                <div class="mySlides fade">
+                    <p class="text">geometry</p>
+                    <img src="imgs/7starhotel.jpg" style="display: block; margin: auto; width:600px; height:450px;">
+                </div>
+
+                <!-- icebergs -->
+                <div class="mySlides fade">
+                    <p class="text">icebergs</p>
+                    <img src="imgs/icebergs.jpg" style="display: block; margin: auto; width:350px; height:450px;">
+                </div>
+
+                <!-- icebergs -->
+                <div class="mySlides fade">
+                    <p class="text">making waves</p>
+                    <img src="imgs/ocean.JPG" style="display: block; margin: auto; width:650px; height:450px;">
+                </div>
+
+                <!-- up -->
+                <div class="mySlides fade">
+                    <p class="text">up</p>
+                    <img src="imgs/up.PNG" style="display: block; margin: auto; width:650px; height:450px;">
+                </div>
+
+
+            </div>
+            <br>
+        
+            <!-- The dots/circles -->
+            <!-- <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>  -->
+
+            <!-- Next and previous buttons -->
+            <div id="dumdum" style="text-align:center">
+                <a onclick="plusSlides(-1)">&#10094;</a>
+                <a onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+            
+                // Next/previous controls
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+            
+                // Thumbnail image controls
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+            
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+            </script>
+        </div>
 </div>
  
 
